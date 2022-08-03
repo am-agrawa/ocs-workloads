@@ -6,7 +6,7 @@ metadata:
   labels:
     app: busybox-sample
 spec:
-  preferredCluster: "amagrawa-c2"
+  preferredCluster: "amagrawa-c2-411"
   drPolicyRef:
     name: my-drpolicy-30
   placementRef:

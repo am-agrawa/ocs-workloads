@@ -4,7 +4,7 @@ kind: Subscription
 metadata:
   annotations:
     apps.open-cluster-management.io/github-branch: 4-11-also-workloads-6
-    apps.open-cluster-management.io/github-path: rdr/app-busybox-6/busybox
+    apps.open-cluster-management.io/github-path: rdr/busybox/app-busybox-6/busybox
   labels:
     app: busybox-sample
   name: busybox-sub
