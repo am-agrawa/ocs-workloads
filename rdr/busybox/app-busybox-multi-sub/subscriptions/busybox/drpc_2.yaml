@@ -6,9 +6,9 @@ metadata:
   labels:
     app: multi-busybox-sample
 spec:
-  preferredCluster: "amagrawa-c1"
+  preferredCluster: "amagrawa-c1-9jan"
   drPolicyRef:
-    name: my-drpolicy-15
+    name: my-drpolicy-5
   placementRef:
     kind: PlacementRule
     name: multi-sub-busybox-placement-2
