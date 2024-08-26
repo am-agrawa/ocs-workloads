@@ -30,5 +30,5 @@ spec:
       volumes:
       - name: mypvc
         persistentVolumeClaim:
-          claimName: busybox-pvc-41
+          claimName: busybox-pvc-41-clone
           readOnly: false
