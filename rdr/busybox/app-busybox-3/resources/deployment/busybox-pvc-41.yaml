@@ -5,6 +5,10 @@ metadata:
     appname: busybox_app3
   name: busybox-pvc-41
 spec:
+  dataSource:
+    apiGroup: snapshot.storage.k8s.io
+    name: busybox-pvc-41-snapshot
+    kind: VolumeSnapshot
   accessModes:
   - ReadWriteOnce
   resources:
