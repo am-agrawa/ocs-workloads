@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     appname: busybox_app3-41
-  name: busybox-41-snap
+  name: busybox-41-clone
 spec:
   selector:
     matchLabels:
@@ -30,5 +30,5 @@ spec:
       volumes:
       - name: mypvc
         persistentVolumeClaim:
-          claimName: busybox-pvc-41-snap
+          claimName: busybox-pvc-41-clone
           readOnly: false
