@@ -1,4 +1,5 @@
 resources:
 - busybox-dc-41.yaml
+- busybox-pvc-41.yaml
 commonLabels:
   app-name: app-busybox-rbd-3
