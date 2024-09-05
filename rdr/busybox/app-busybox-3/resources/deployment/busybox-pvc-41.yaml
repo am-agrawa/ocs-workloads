@@ -3,11 +3,11 @@ kind: PersistentVolumeClaim
 metadata:
   labels:
     appname: busybox_app3
-  name: busybox-pvc-41-snap
+  name: busybox-pvc-41-clone
 spec:
   dataSource:
     apiGroup: snapshot.storage.k8s.io
-    name: busybox-pvc-41-snapshot
+    name: busybox-pvc-41-clone
     kind: VolumeSnapshot
   accessModes:
   - ReadWriteOnce
