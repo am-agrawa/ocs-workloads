@@ -5,13 +5,18 @@ metadata:
     appname: busybox_app3
   name: busybox-pvc-41-clone
 spec:
-  dataSource:
-    apiGroup: snapshot.storage.k8s.io
-    name: busybox-pvc-41-clone
-    kind: VolumeSnapshot
   accessModes:
   - ReadWriteOnce
+  dataSource:
+    apiGroup: ""
+    kind: PersistentVolumeClaim
+    name: busybox-pvc-41
+  dataSourceRef:
+    apiGroup: ""
+    kind: PersistentVolumeClaim
+    name: busybox-pvc-41
   resources:
     requests:
       storage: 42Gi
   storageClassName: ocs-storagecluster-ceph-rbd
+  volumeMode: Filesystem
