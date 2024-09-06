@@ -4,14 +4,19 @@ kind: PersistentVolumeClaim
 metadata:
   name: vm-1-pvc-snapshot-restore
 spec:
-  dataSourceRef:
-    apiGroup: cdi.kubevirt.io
-    kind: VolumeImportSource
-    name: cirros-source
   accessModes:
-    - ReadWriteMany
+  - ReadWriteMany
+  dataSource:
+    apiGroup: snapshot.storage.k8s.io
+    kind: VolumeSnapshot
+    name: vm-1-pvc-snapshot
+  dataSourceRef:
+    apiGroup: snapshot.storage.k8s.io
+    kind: VolumeSnapshot
+    name: vm-1-pvc-snapshot
   resources:
     requests:
       storage: 512Mi
-  storageClassName: ocs-storagecluster-ceph-rbd-virtualization
+  storageClassName: ocs-storagecluster-ceph-rbd
   volumeMode: Block
+  volumeName: pvc-466793bc-14da-4b2f-8113-2a6994c16c9c
