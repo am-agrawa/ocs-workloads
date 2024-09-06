@@ -19,4 +19,3 @@ spec:
       storage: 512Mi
   storageClassName: ocs-storagecluster-ceph-rbd-virtualization
   volumeMode: Block
-  volumeName: pvc-0ce0ff59-2ae7-4375-9c29-648db8a24d10
