@@ -3,6 +3,9 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: vm-1-pvc-snapshot-restore
+  labels:
+      appname: kubevirt
+      app: test
 spec:
   accessModes:
   - ReadWriteMany
@@ -20,3 +23,4 @@ spec:
   storageClassName: ocs-storagecluster-ceph-rbd-virtualization
   volumeMode: Block
   volumeName: pvc-bec07cca-c225-4828-bff9-78fa20ed4ef6
+  labe
