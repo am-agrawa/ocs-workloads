@@ -6,14 +6,6 @@ metadata:
 spec:
   accessModes:
   - ReadWriteMany
-  dataSource:
-    apiGroup: ""
-    kind: PersistentVolumeClaim
-    name: vm-1-pvc
-  dataSourceRef:
-    apiGroup: ""
-    kind: PersistentVolumeClaim
-    name: vm-1-pvc
   resources:
     requests:
       storage: 512Mi
