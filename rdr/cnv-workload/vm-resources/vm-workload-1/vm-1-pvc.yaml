@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: vm-1-pvc
+  name: vm-1-pvc-clone
 spec:
   accessModes:
   - ReadWriteMany
