@@ -1,0 +1,6 @@
+namespace: busybox-workloads-6
+resources:
+- namespace.yaml
+- placement.yaml
+- subscription.yaml
+- app.yaml

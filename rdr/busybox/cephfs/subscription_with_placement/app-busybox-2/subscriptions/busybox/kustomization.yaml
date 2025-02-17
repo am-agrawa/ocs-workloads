@@ -1,0 +1,6 @@
+namespace: busybox-workloads-cephfs-2
+resources:
+- namespace.yaml
+- placement.yaml
+- subscription.yaml
+- app.yaml
